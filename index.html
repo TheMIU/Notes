@@ -18,8 +18,8 @@
 
     <style>
         body {
-            background-image: linear-gradient(to left, #967acb, #2877a8);
-            /*background-color: #2877a8;*/
+            /*   background-image: linear-gradient(to bottom, #120a1f, #1c1c1c);*/
+            background-color: #030e15;
             font-family: 'JetBrains Mono', monospace;
             color: #333;
         }
@@ -41,71 +41,104 @@
         }
 
         li {
+            color: aqua;
             margin-bottom: 10px;
         }
 
         a {
             font-weight: normal;
             text-decoration: none;
-            color: rgb(4, 49, 115);
+            color: rgb(92, 182, 187);
         }
 
-        a:hover{
+        a:hover {
             font-weight: bold;
+            color: rgb(107, 201, 206);
         }
 
         button {
             cursor: pointer;
         }
     </style>
-
 </head>
 
 <body>
-<main>
-    <h1 style="background-image: linear-gradient(to left, #967acb, #2877a8);" class="text-white p-5 text-center">SEM
-        01</h1>
-
-    <h2 style="background-color: #2877a8;" class="text-white p-1"> PRF</h2>
-
-    <ul>
-        <li>
-            <button class="btn"><a
-                    href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit"
-                    target="_blank">PRF Q&amp;A</a></button>
-
-        </li>
-        <li>
-            <button class="btn"><a
-                    href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit">Note</a>
+<!--Header-->
+<header>
+    <nav class="navbar  navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Notes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color: white"></span>
             </button>
-        </li>
-    </ul>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <a style="color: #45b0ff" class="nav-link" href="#">SEM_01</a>
+                    <a style="color: #45b0ff" class="nav-link" href="#">SEM_02</a>
+                    <a style="color: #45b0ff" class="nav-link" href="#">SEM_03</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 
-    <h2 style="background-color: #2877a8;" class="text-white p-1"> DBM</h2>
+<!--Main Content-->
+<main style="margin-top: 50px ; background-color: #0b1b2f">
+    <section id="sem01">
+        <h3 style="background-image: linear-gradient(to left, #967acb, #2877a8);" class="text-white p-2 text-center">SEM
+            01</h3>
 
-    <ul>
-        <li>
-            <button class="btn"><a
-                    href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit">DBM Q&amp;A</a>
-            </button>
-        </li>
-        <li>
-            <button class="btn"><a
-                    href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit">DBM
-                Note</a></button>
-        </li>
-    </ul>
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding :5px 0px 5px 15px" class="text-white">
+            PRF</h5>
 
-    <h1 style="background-image: linear-gradient(to left, #967acb, #2877a8);" class="text-white p-5 text-center">SEM
-        02</h1>
+        <ul>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit"
+                        target="_blank">PRF Q&amp;A</a></button>
+            </li>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit">Note</a>
+                </button>
+            </li>
+        </ul>
 
-    <ul>
-        <li>Internet</li>
-        <li>HTML</li>
-        <li>CSS</li>
-    </ul>
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding :5px 0px 5px 15px" class="text-white">
+            DBM</h5>
+
+        <ul>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit">DBM
+                    Q&amp;A</a>
+                </button>
+            </li>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit">DBM
+                    Note</a></button>
+            </li>
+        </ul>
+    </section>
+
+    <section id="sem02">
+        <h3 style="background-image: linear-gradient(to left, #967acb, #2877a8);" class="text-white p-2 text-center">SEM
+            02</h3>
+
+        <ul>
+            <li>Internet</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </section>
 </main>
+
+<!--Footer-->
+<footer style="color: #6b6b6b" class="bg-dark text-center p-2">
+    <h6 style="font-size: 0.8rem"> Thank you ! </h6>
+</footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
