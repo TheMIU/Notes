@@ -67,16 +67,16 @@
 <header>
     <nav class="navbar  navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">Notes</a>
+            <a class="navbar-brand text-white" href="#" id="NavHome">Notes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="color: white"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ">
-                    <a style="color: #45b0ff" class="nav-link" href="#">SEM_01</a>
-                    <a style="color: #45b0ff" class="nav-link" href="#">SEM_02</a>
-                    <a style="color: #45b0ff" class="nav-link" href="#">SEM_03</a>
+                    <a style="color: #45b0ff" class="nav-link" href="#" id="NavSEM01">SEM_01</a>
+                    <a style="color: #45b0ff" class="nav-link" href="#" id="NavSEM02">SEM_02</a>
+                    <a style="color: #45b0ff" class="nav-link" href="#" id="NavSEM03">SEM_03</a>
                 </div>
             </div>
         </div>
@@ -84,8 +84,12 @@
 </header>
 
 <!--Main Content-->
-<main style="margin-top: 50px ; background-color: #0b1b2f">
-    <section id="sem01">
+<main style="margin-top: 50px ; background-color: #0b1b2f ; height: auto" >
+    <section id="Home">
+        <h3 style="background-image: linear-gradient(to left, #967acb, #2877a8);" class="text-white p-2 text-center">Home</h3>
+    </section>
+
+    <section id="SEM_01">
         <h3 style="background-image: linear-gradient(to left, #967acb, #2877a8);" class="text-white p-2 text-center">SEM
             01</h3>
 
@@ -121,27 +125,118 @@
                     Note</a></button>
             </li>
         </ul>
+
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding :5px 0px 5px 15px" class="text-white">
+            OOP</h5>
+
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding :5px 0px 5px 15px" class="text-white">
+            SE</h5>
+
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding :5px 0px 5px 15px" class="text-white">
+            JDBC</h5>
+
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding :5px 0px 5px 15px" class="text-white">
+            Regex</h5>
+
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding :5px 0px 5px 15px" class="text-white">
+            Generics</h5>
+
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding :5px 0px 5px 15px" class="text-white">
+            String API & Collection framework</h5>
     </section>
 
-    <section id="sem02">
+    <section id="SEM_02">
         <h3 style="background-image: linear-gradient(to left, #967acb, #2877a8);" class="text-white p-2 text-center">SEM
             02</h3>
 
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding :5px 0px 5px 15px" class="text-white">
+            PRF</h5>
+
         <ul>
-            <li>Internet</li>
-            <li>HTML</li>
-            <li>CSS</li>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit"
+                        target="_blank">PRF Q&amp;A</a></button>
+            </li>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit">Note</a>
+                </button>
+            </li>
         </ul>
+
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding :5px 0px 5px 15px" class="text-white">
+            DBM</h5>
+
+        <ul>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit">DBM
+                    Q&amp;A</a>
+                </button>
+            </li>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit">DBM
+                    Note</a></button>
+            </li>
+        </ul>
+
+    </section>
+
+    <section id="SEM_03">
+        <h3 style="background-image: linear-gradient(to left, #967acb, #2877a8);" class="text-white p-2 text-center">SEM
+            03</h3>
+
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding :5px 0px 5px 15px" class="text-white">
+            PRF</h5>
+
+        <ul>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit"
+                        target="_blank">PRF Q&amp;A</a></button>
+            </li>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit">Note</a>
+                </button>
+            </li>
+        </ul>
+
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding :5px 0px 5px 15px" class="text-white">
+            DBM</h5>
+
+        <ul>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit">DBM
+                    Q&amp;A</a>
+                </button>
+            </li>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/17F-RXKYVeEiqdkZLDN9doAh1mcuuRKl6Hp2ykzyCrh4/edit">DBM
+                    Note</a></button>
+            </li>
+        </ul>
+
     </section>
 </main>
 
-<!--Footer-->
-<footer style="color: #6b6b6b" class="bg-dark text-center p-2">
+<!--Footer
+<footer style="color: #6b6b6b" class="bg-dark text-center p-2 ">
     <h6 style="font-size: 0.8rem"> Thank you ! </h6>
-</footer>
+</footer>-->
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- jquery JS -->
+<script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+
+<script src="js/javascript.js"></script>
+
 </body>
 
 </html>
