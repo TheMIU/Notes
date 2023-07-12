@@ -63,6 +63,15 @@
         button {
             cursor: pointer;
         }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
     </style>
 </head>
 
@@ -90,10 +99,33 @@
 <!--Main Content-->
 <main style="margin-top: 50px ; background-color: #0b1b2f ; height: auto">
     <!--//////////////Home////////////////-->
-    <section id="Home">
-        <h3 style="background-image: linear-gradient(to left, #967acb, #2877a8);" class="text-white p-2 text-center">
-            Home</h3>
+    <section id="Home" style="height: 75vh;">
+        <h3 style="background-image: linear-gradient(to left, #967acb, #2877a8);" class=" text-white p-2 text-center">
+            Notes</h3>
+        <dev class="m-5">
+            <h5 class="card" style="background-color: rgba(0,102,255,0.5); border-radius: 5px; padding: 20px; text-align: center;">
+                <a style="color: #ffffff; text-decoration: none; transition: color 0.3s;" class=" nav-link" href="#"
+                   id="NavSEM1">
+                    SEM_01
+                </a>
+            </h5>
+
+            <h5 class="card" style="background-color: rgba(0,102,255,0.5); border-radius: 5px; padding: 20px; text-align: center;">
+                <a style="color: #ffffff; text-decoration: none; transition: color 0.3s;" class="nav-link" href="#"
+                   id="NavSEM2">
+                    SEM_02
+                </a>
+            </h5>
+
+            <h5 class="card"  style="background-color: rgba(0,102,255,0.5); border-radius: 5px; padding: 20px; text-align: center;">
+                <a style="color: #ffffff; text-decoration: none; transition: color 0.3s;" class="nav-link" href="#"
+                   id="NavSEM3">
+                    SEM_03
+                </a>
+            </h5>
+        </dev>
     </section>
+
 
     <!--//////////////SEM 01////////////////-->
     <section id="SEM_01">
@@ -263,7 +295,137 @@
         <h3 style="background-image: linear-gradient(to left, #967acb, #2877a8);" class="text-white p-2 text-center">SEM
             02</h3>
 
+        <!--**** GitHub , Internet Terminology *****-->
+        <ul>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/1f7z0p9go86XCuqoaSEyRv_-E4n_Fm3Qipu7l1j6amv8"
+                        target="_blank">GitHub</a></button>
+            </li>
 
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/1wB8GHWQ4bQoR98MsDm2_yHlW2ApLjbihy_F5DlH6r6g"
+                        target="_blank">Internet Terminology</a></button>
+            </li>
+        </ul>
+
+        <!--**** Layered Architecture *****-->
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding: 5px 0px 5px 15px;" class="text-white">
+            Layered Architecture <span
+                style="display: inline-block; padding-left: 10px; font-size: 12px; color: #0b1b2f">
+            </span>
+        </h5>
+        <ul>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/15P32PDxMH8tKaxi0kWaQjutezmFweAwzgCV1vMNBQ-8"
+                        target="_blank">Layered Architecture Note</a></button>
+            </li>
+
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/1hF6NZbv1_CWKJCVLfbZ0htZO1CdMA82J2cnHn0ShKJY"
+                        target="_blank">Layered Architecture Q & A</a></button>
+            </li>
+        </ul>
+
+        <!--**** ORM *****-->
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding: 5px 0px 5px 15px;" class="text-white">
+            ORM <span style="display: inline-block; padding-left: 10px; font-size: 12px; color: #0b1b2f">
+           Object Relational Mapping </span>
+        </h5>
+        <ul>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/1FNW3VSZ8x3nWFnYOKg_ctc0kiMMfidrbEGmb1mQ2QoI"
+                        target="_blank">ORM Note</a></button>
+            </li>
+
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/1cvslWNWbeK-a35fpKAhHoIqTppBwb6tCj0tN0udImLY"
+                        target="_blank">ORM Short</a></button>
+            </li>
+
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/1j-MUToAMdAGZR3V1j0W4jZEx2QeY9bDC26RXlgXh3ss"
+                        target="_blank">ORM Q & A</a></button>
+            </li>
+        </ul>
+
+        <!--**** Network Programming *****-->
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding: 5px 0px 5px 15px;" class="text-white">
+            Network Programming <span
+                style="display: inline-block; padding-left: 10px; font-size: 12px; color: #0b1b2f"></span>
+        </h5>
+        <ul>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/1V_aKECSMXbJyEx5nZClEDStXz7nUA22FmvTaxHAHvek"
+                        target="_blank">Network Programming Note</a></button>
+            </li>
+
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/15b8xIO7jcatAlFj1AD3xvOf39cB4yuyGfzwhsDvEb2g"
+                        target="_blank">Network Programming Q & A</a></button>
+            </li>
+        </ul>
+
+        <!--**** Internet Technologies *****-->
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding: 5px 0px 5px 15px;" class="text-white">
+            Internet Technologies <span
+                style="display: inline-block; padding-left: 10px; font-size: 12px; color: #0b1b2f"></span>
+        </h5>
+        <ul>
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/1x_sJkyqDYj94Epr9gsMlemeRaE_hsHr2Ev-lV2VXtOc"
+                        target="_blank">Internet Technologies Note</a></button>
+            </li>
+
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/19Dgj_-klq6c3biUoH4HZnD6a_H5GhO5oKx77ehmTN8g"
+                        target="_blank">HTML</a></button>
+            </li>
+
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/1QoOiGHfmQMlYdr7gHlMBC5KMENvyeyeus5HIZxplotc"
+                        target="_blank">CSS</a></button>
+            </li>
+
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/1tounuqQ-uKAFtLoTHklppEgssf9vOZd9WMBOYArHh_I"
+                        target="_blank">JavaScript</a></button>
+            </li>
+
+            <li>
+                <button class="btn"><a
+                        href="https://docs.google.com/document/d/1M_9HOydnfbuWrAy7wY_DWbyQT4hMOlvB8w-sm-0Q2ds"
+                        target="_blank">Internet Technologies Q & A</a></button>
+            </li>
+        </ul>
+
+        <!--**** CNS *****-->
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding: 5px 0px 5px 15px;" class="text-white">
+            CNS <span style="display: inline-block; padding-left: 10px; font-size: 12px; color: #0b1b2f"> Computer Networking for Software Engineering</span>
+        </h5>
+        <ul>
+
+        </ul>
+
+        <!--**** AAD *****-->
+        <h5 style="background-color: #2877a8; border-radius: 5px; padding: 5px 0px 5px 15px;" class="text-white">
+            AAD <span style="display: inline-block; padding-left: 10px; font-size: 12px; color: #0b1b2f"> Advance Api Development</span>
+        </h5>
+        <ul>
+
+        </ul>
     </section>
 
     <!--//////////////SEM 03////////////////-->
@@ -271,13 +433,10 @@
         <h3 style="background-image: linear-gradient(to left, #967acb, #2877a8);" class="text-white p-2 text-center">SEM
             03</h3>
 
+
     </section>
 </main>
 
-<!--Footer
-<footer style="color: #6b6b6b" class="bg-dark text-center p-2 ">
-    <h6 style="font-size: 0.8rem"> Thank you ! </h6>
-</footer>-->
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

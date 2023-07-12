@@ -12,12 +12,27 @@ $(document).ready(function() {
         $("section:not(#SEM_01)").hide();
     });
 
+    $("#NavSEM1").click(function(event) {
+        $("#SEM_01").show();
+        $("section:not(#SEM_01)").hide();
+    });
+
     $("#NavSEM02").click(function(event) {
         $("#SEM_02").show();
         $("section:not(#SEM_02)").hide();
     });
 
+    $("#NavSEM2").click(function(event) {
+        $("#SEM_02").show();
+        $("section:not(#SEM_02)").hide();
+    });
+
     $("#NavSEM03").click(function(event) {
+        $("#SEM_03").show();
+        $("section:not(#SEM_03)").hide();
+    });
+
+    $("#NavSEM3").click(function(event) {
         $("#SEM_03").show();
         $("section:not(#SEM_03)").hide();
     });
