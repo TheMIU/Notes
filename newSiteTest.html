@@ -31,6 +31,7 @@
 <body>
     <!--Header-->
     <header>
+        <!-- navbar -->
         <nav class="navbar navbar-expand-lg bg-black fixed-top" data-bs-theme="dark">
             <div class="container-fluid">
 
@@ -57,12 +58,23 @@
                                     class="fa-solid fa-circle-info"></i> More</a>
 
                             <ul class="dropdown-menu bg-black">
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-question"></i> How To Use</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-table-cells-large"></i> Useful resources</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://docs.google.com/document/d/1O2GCeust6HLJFlPwKKwk_cN0-3S-wSvwuulopwccT08"
+                                        target="_blank">
+                                        <i class="fa-solid fa-circle-question"></i> How To Use</a></li>
+
+                                <li><a class="dropdown-item"
+                                        href="https://docs.google.com/document/d/1-MJZj6UEzSytfLRn4LC4np8_PM8pk9N28rGQ3BEeN78"
+                                        target="_blank">
+                                        <i class="fa-solid fa-table-cells-large"></i>Useful resources</a></li>
+
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-info"></i> About</a></li>
+
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#about"><i
+                                            class="fa-solid fa-circle-info"></i> About</a>
+                                </li>
                             </ul>
                         </li>
                     </div>
@@ -73,6 +85,7 @@
 
     <!--Main Content-->
     <main>
+        <!--////////////// Main 3 buttons ////////////////-->
         <div class="container d-flex align-items-center justify-content-center vh-100">
             <div class="text-center">
                 <div class="row">
@@ -106,8 +119,24 @@
             </div>
         </div>
 
-        <!--//////////////Home////////////////-->
+        <!--////////////// About ////////////////-->
+        <div class="modal" data-bs-backdrop="static" id="about" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-black text-white">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><i class="fa-solid fa-circle-info"></i> About</h5>
+                        <i class="fa-regular fa-circle-xmark" type="button" data-bs-dismiss="modal"
+                            aria-label="Close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <p>about </p>
+                    </div>
+                    <div class="modal-footer">
 
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--//////////////SEM 01////////////////-->
 
@@ -119,6 +148,7 @@
 
     </main>
 
+    <!-- Footer -->
     <footer class="card-footer fixed-bottom bg-black text-center text-secondary" data-bs-theme="dark">
         <p class="pt-2" style="font-size: 12px;"> Kasun Miuranga <i class="fa-regular fa-copyright"></i> 2023 </p>
     </footer>
@@ -129,7 +159,7 @@
     <!-- jquery JS -->
     <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
 
-    <!-- fontawsome -->
+    <!-- fontAwesome -->
     <script src="https://kit.fontawesome.com/be11977956.js" crossorigin="anonymous"></script>
 
     <script src="js/scripts.js"></script>
