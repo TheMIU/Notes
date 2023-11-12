@@ -80,7 +80,6 @@ function changeNavLinksWhite(){
 
 ////// Toggle navbar
 function toggleNavbar(){
-   /*  $(".navbar-toggler").click(); */
    $(".navbar-collapse").collapse('hide');
 }
 
