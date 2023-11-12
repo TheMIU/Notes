@@ -17,3 +17,34 @@ var icon = $('<i>').addClass('fa-solid fa-file ');
 $(".subject-container ul li").each(function () {
     $(this).prepend(icon.clone());
 });
+
+////// Navigation
+hideAll();
+$("#main3buttons").show();
+
+$("#navHome").click(function () {
+    hideAll();
+    $("#main3buttons").show();
+});
+
+$("#btn-sem-1, #navSEM01").click(function () {
+    hideAll();
+    $("#sem-1").show();
+});
+
+$("#btn-sem-2, #navSEM02").click(function () {
+    hideAll();
+    $("#sem-2").show();
+});
+
+$("#btn-sem-3, #navSEM03").click(function () {
+    hideAll();
+    $("#sem-3").show();
+});
+
+function hideAll() {
+    $("#main3buttons").hide();
+    $("#sem-1").hide();
+    $("#sem-2").hide();
+    $("#sem-3").hide();
+}

@@ -37,7 +37,7 @@
         <nav class="navbar navbar-expand-lg bg-black fixed-top" data-bs-theme="dark">
             <div class="container-fluid">
 
-                <a class="navbar-brand text-white" href="#" id="NavHome">
+                <a class="navbar-brand text-white" href="#" id="navHome">
                     <img src="images/favicon.png" style="width: 30px; margin-right: 5px;"> Notes</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -46,17 +46,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a style="color: #45b0ff" class="nav-link" href="#" id="NavSEM01"><i
+                        <a style="color: #45b0ff" class="nav-link" href="#" id="navSEM01"><i
                                 class="fa-solid fa-book mb-2"></i> SEM_01</a>
-                        <a style="color: #45b0ff" class="nav-link" href="#" id="NavSEM02"><i
+                        <a style="color: #45b0ff" class="nav-link" href="#" id="navSEM02"><i
                                 class="fa-solid fa-book mb-2"></i> SEM_02</a>
-                        <a style="color: #45b0ff" class="nav-link" href="#" id="NavSEM03"><i
+                        <a style="color: #45b0ff" class="nav-link" href="#" id="navSEM03"><i
                                 class="fa-solid fa-book mb-2"></i> SEM_03</a>
 
                         <!-- dropdown menu -->
                         <li class="nav-item dropdown">
                             <a style="color: rgb(184, 250, 255)" class="nav-link dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" id="NavSEM01"><i
+                                data-bs-toggle="dropdown" aria-expanded="false"><i
                                     class="fa-solid fa-circle-info"></i> More</a>
 
                             <ul class="dropdown-menu bg-black">
@@ -68,7 +68,7 @@
                                 <li><a class="dropdown-item"
                                         href="https://docs.google.com/document/d/1-MJZj6UEzSytfLRn4LC4np8_PM8pk9N28rGQ3BEeN78"
                                         target="_blank">
-                                        <i class="fa-solid fa-table-cells-large"></i>Useful resources</a></li>
+                                        <i class="fa-solid fa-table-cells-large"></i> Useful resources</a></li>
 
                                 <li>
                                     <hr class="dropdown-divider">
@@ -88,41 +88,46 @@
     <!--Main Content-->
     <main>
         <!--////////////// Main 3 buttons ////////////////-->
-        <div id="main3buttons" class="container d-flex align-items-center justify-content-center vh-100">
-            <div class="text-center">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <hr class="text-white">
-                    </div>
+        <div id="main3buttons">
+            <div class="container d-flex align-items-center justify-content-center vh-100">
+                <div class="text-center">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <hr class="text-white">
+                        </div>
 
-                    <div class="col-lg-4 col-md-12">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button class="button m-3 bg-black p-3"> <i class="fa-solid fa-book fa-2x mb-2"></i>
-                                <br> SEM - 01</button>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button id="btn-sem-1" class="button m-3 bg-black p-3"> <i
+                                        class="fa-solid fa-book fa-2x mb-2"></i>
+                                    <br> SEM - 01</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button class="button m-3 bg-black p-3"> <i class="fa-solid fa-book fa-2x mb-2"></i>
-                                <br> SEM - 02</button>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button id="btn-sem-2" class="button m-3 bg-black p-3"> <i
+                                        class="fa-solid fa-book fa-2x mb-2"></i>
+                                    <br> SEM - 02</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button class="button m-3 bg-black p-3"> <i class="fa-solid fa-book fa-2x mb-2"></i>
-                                <br> SEM - 03</button>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button id="btn-sem-3" class="button m-3 bg-black p-3"> <i
+                                        class="fa-solid fa-book fa-2x mb-2"></i>
+                                    <br> SEM - 03</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-12 col-md-12">
-                        <hr class="text-white">
+                        <div class="col-lg-12 col-md-12">
+                            <hr class="text-white">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!--////////////// About ////////////////-->
-        <div class="modal" data-bs-backdrop="static" id="about" tabindex="-1">
+        <div id="about" class="modal" data-bs-backdrop="static" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-black text-white">
                     <div class="modal-header">
@@ -139,7 +144,7 @@
         </div>
 
         <!--//////////////SEM 01////////////////-->
-        <div id="SEM_01" class="container-sm subject-container">
+        <div id="sem-1" class="container-sm subject-container">
             <br>
             <br>
             <br>
@@ -295,10 +300,224 @@
         </div>
 
         <!--//////////////SEM 02////////////////-->
+        <div id="sem-2" class="container-sm subject-container">
+            <br>
+            <br>
+            <br>
+            <div class="row justify-content-evenly">
+                <div>
+                    <hr class="text-white">
+                    <h4 class="text-black text-center">SEM 02</h4>
+                    <hr class="text-white">
+                </div>
+            </div>
 
+            <div class="row justify-content-evenly">
+                <!--**** GitHub , Internet Terminology *****-->
+                <div class="col-lg-3 col-md-12 sub-container-styles">
+                    <h5> Other</h5>
+
+                    <ul>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1f7z0p9go86XCuqoaSEyRv_-E4n_Fm3Qipu7l1j6amv8"
+                                target="_blank">GitHub</a>
+                        </li>
+
+                        <li>
+                            <a href="https://docs.google.com/document/d/1wB8GHWQ4bQoR98MsDm2_yHlW2ApLjbihy_F5DlH6r6g"
+                                target="_blank">Internet Terminology</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--**** Layered Architecture *****-->
+                <div class="col-lg-3 col-md-12 sub-container-styles">
+                    <h5> Layered Architecture</h5>
+
+                    <ul>
+                        <li>
+                            <a href="https://docs.google.com/document/d/15P32PDxMH8tKaxi0kWaQjutezmFweAwzgCV1vMNBQ-8"
+                                target="_blank">Layered Note</a>
+                        </li>
+
+                        <li>
+                            <a href="https://docs.google.com/document/d/1hF6NZbv1_CWKJCVLfbZ0htZO1CdMA82J2cnHn0ShKJY"
+                                target="_blank">Layered Q & A</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--**** ORM *****-->
+                <div class="col-lg-3 col-md-12 sub-container-styles">
+                    <h5 data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Object Relational Mapping">
+                        ORM</h5>
+
+                    <ul>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1FNW3VSZ8x3nWFnYOKg_ctc0kiMMfidrbEGmb1mQ2QoI"
+                                target="_blank">ORM Note</a>
+                        </li>
+
+                        <li>
+                            <a href="https://docs.google.com/document/d/1cvslWNWbeK-a35fpKAhHoIqTppBwb6tCj0tN0udImLY"
+                                target="_blank">ORM Short</a>
+                        </li>
+
+                        <li>
+                            <a href="https://docs.google.com/document/d/1j-MUToAMdAGZR3V1j0W4jZEx2QeY9bDC26RXlgXh3ss"
+                                target="_blank">ORM Q & A</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--**** Network Programming *****-->
+                <div class="col-lg-3 col-md-12 sub-container-styles">
+                    <h5> Network Programming</h5>
+
+                    <ul>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1V_aKECSMXbJyEx5nZClEDStXz7nUA22FmvTaxHAHvek"
+                                target="_blank">Network Note</a>
+                        </li>
+
+                        <li>
+                            <a href="https://docs.google.com/document/d/15b8xIO7jcatAlFj1AD3xvOf39cB4yuyGfzwhsDvEb2g"
+                                target="_blank">Network Q & A</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--**** Internet Technologies *****-->
+                <div class="col-lg-3 col-md-12 sub-container-styles">
+                    <h5> Internet Technologies</h5>
+
+                    <ul>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1x_sJkyqDYj94Epr9gsMlemeRaE_hsHr2Ev-lV2VXtOc"
+                                target="_blank">IT Note</a>
+                        </li>
+
+                        <li>
+                            <a href="https://docs.google.com/document/d/19Dgj_-klq6c3biUoH4HZnD6a_H5GhO5oKx77ehmTN8g"
+                                target="_blank">HTML</a>
+                        </li>
+
+                        <li>
+                            <a href="https://docs.google.com/document/d/1QoOiGHfmQMlYdr7gHlMBC5KMENvyeyeus5HIZxplotc"
+                                target="_blank">CSS</a>
+                        </li>
+
+                        <li>
+                            <a href="https://docs.google.com/document/d/1tounuqQ-uKAFtLoTHklppEgssf9vOZd9WMBOYArHh_I"
+                                target="_blank">JavaScript</a>
+                        </li>
+
+                        <li>
+                            <a href="https://docs.google.com/document/d/1M_9HOydnfbuWrAy7wY_DWbyQT4hMOlvB8w-sm-0Q2ds"
+                                target="_blank">IT Q & A</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--**** CNS *****-->
+                <div class="col-lg-3 col-md-12 sub-container-styles">
+                    <h5 data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-title="Networking for Software Engineering">
+                        CNS</h5>
+
+                    <ul>
+                        <li>
+                            <a href="https://docs.google.com/document/d/19bhhaxQBiD_euK2iCALqt03dQrnde77oZGhx6aIwLSo"
+                                target="_blank">CNS Note</a>
+                        </li>
+
+                        <li>
+                            <a href="https://docs.google.com/document/d/1KZD-A_YD_0c7sjngYk5pJt2L6kxq9AUceEODXeb6cAI"
+                                target="_blank">CNS Short Note</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--**** AAD *****-->
+                <div class="col-lg-3 col-md-12 sub-container-styles">
+                    <h5 data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Advance Api Development">
+                        AAD</h5>
+
+                    <ul>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1SOQX9NF3E-TXYrvxfIaSs_b6477geF8y8NDTkj8exec"
+                                target="_blank">OOP in JS</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1KL3PGy00skrdpzhaAp3lgBR4wHdVk74bP936plBnqMw"
+                                target="_blank">Java EE</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1EiE1xjPk07dRjhrkPdGXUhfBlSqQKIVkN5znKbIxq7E"
+                                target="_blank">Spring</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1AN5MrnIYFhTImTZDUpm5_9BCpX0eSG-aerqb6Wru5eE"
+                                target="_blank">Spring Short</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1Flx5saYRgZcsoosDtXLjK7K_cH4EiqDhTaJHx4GCaIc"
+                                target="_blank">Spring Q & A</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <br>
+        </div>
 
         <!--//////////////SEM 03////////////////-->
+        <div id="sem-3" class="container-sm subject-container">
+            <br>
+            <br>
+            <br>
+            <div class="row justify-content-evenly">
+                <div>
+                    <hr class="text-white">
+                    <h4 class="text-black text-center">SEM 03</h4>
+                    <hr class="text-white">
+                </div>
+            </div>
 
+            <div class="row justify-content-evenly">
+                <!--**** Architecture and Design Patterns - 2 *****-->
+                <div class="col-lg-3 col-md-12 sub-container-styles">
+                    <h5 data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Architecture and Design Patterns - 2">
+                        AD-2</h5>
+
+                    <ul>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1mMQwytSe2YWJ0kk0hmrHyeVWZLPcvPPTUwxYu1TDU6Q"
+                                target="_blank">AD2 note</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--**** Rapid Application Development *****-->
+                <div class="col-lg-3 col-md-12 sub-container-styles">
+                    <h5 data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Rapid Application Development">
+                        RAD</h5>
+
+                    <ul>
+                        <li>
+                            <a href="https://docs.google.com/document/d/19xY6hzT7mlFyuoqHJ2_NbMw9qapSL7B3wnpIanwyHaE"
+                                target="_blank">RAD note</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--****  *****-->
+                <div class="col-lg-3 col-md-12 ">
+
+                </div>
+            </div>
+            <br>
+        </div>
     </main>
 
     <!-- Footer -->
