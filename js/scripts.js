@@ -20,26 +20,48 @@ $(".subject-container ul li").each(function () {
 
 ////// Navigation
 hideAll();
+changeNavLinksWhite();
+$("#home").css("color", "#45b0ff");
 $("#main3buttons").show();
 
 $("#navHome").click(function () {
     hideAll();
     $("#main3buttons").show();
+    changeNavLinksWhite();
+    $("#home").css("color", "#45b0ff");
+    toggleNavbar();
+});
+
+$("#home").click(function () {
+    hideAll();
+    $("#main3buttons").show();
+    changeNavLinksWhite();
+    $("#home").css("color", "#45b0ff");
+    toggleNavbar();
 });
 
 $("#btn-sem-1, #navSEM01").click(function () {
     hideAll();
     $("#sem-1").show();
+    changeNavLinksWhite();
+    $("#navSEM01").css("color", "#45b0ff");
+    toggleNavbar();
 });
 
 $("#btn-sem-2, #navSEM02").click(function () {
     hideAll();
     $("#sem-2").show();
+    changeNavLinksWhite();
+    $("#navSEM02").css("color", "#45b0ff");
+    toggleNavbar();
 });
 
 $("#btn-sem-3, #navSEM03").click(function () {
     hideAll();
     $("#sem-3").show();
+    changeNavLinksWhite();
+    $("#navSEM03").css("color", "#45b0ff");
+    toggleNavbar();
 });
 
 function hideAll() {
@@ -48,3 +70,23 @@ function hideAll() {
     $("#sem-2").hide();
     $("#sem-3").hide();
 }
+
+function changeNavLinksWhite(){
+    $("#navSEM01").css("color", "white");
+    $("#navSEM02").css("color", "white");
+    $("#navSEM03").css("color", "white");
+    $("#home").css("color", "white");
+}
+
+////// Toggle navbar
+function toggleNavbar(){
+   /*  $(".navbar-toggler").click(); */
+   $(".navbar-collapse").collapse('hide');
+}
+
+$(document).on("click", function (event) {
+    // Check if the clicked element is not part of the navbar
+    if (!$(event.target).closest('.navbar').length) {
+        $(".navbar-collapse").collapse('hide');
+    }
+});

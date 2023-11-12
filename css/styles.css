@@ -8,6 +8,7 @@
     z-index: -100;
 }
 
+/* custom 3 buttons */
 .button {
     border: none;
     background: #4285f4;
@@ -27,6 +28,7 @@
     transform: translate(0px, -10px) scale(1.2);
 }
 
+/* custom containers */
 .sub-container-styles {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
@@ -46,7 +48,6 @@
     padding: 5px 0px 5px 15px;
     color: white;
 }
-
 
 .subject-container span {
     display: inline-block;
