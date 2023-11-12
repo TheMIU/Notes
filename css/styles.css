@@ -41,11 +41,12 @@
 }
 
 .subject-container h5 {
-    background-color: #2877a8;
+    background-color: #0083d4;
     border-radius: 5px;
     padding: 5px 0px 5px 15px;
     color: white;
 }
+
 
 .subject-container span {
     display: inline-block;
@@ -56,12 +57,21 @@
 
 .subject-container a {
     text-decoration: none;
-    color: white;
+    color: #0196f3;
     font-style: normal;
+    transition: color 0.2s ease;
+}
+
+.subject-container a:hover {
+    color: white;
+    transition: color 0.2s ease;
+}
+
+.subject-container ul {
+    list-style-type: none;
 }
 
 .subject-container li {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin: 0;
+    margin-top: 5px;
+    color: #0083d4;
 }
