@@ -6,6 +6,7 @@
     height: 100vh;
     object-fit: cover;
     z-index: -100;
+    opacity: 50%;
 }
 
 /* custom 3 buttons */
@@ -43,10 +44,10 @@
 }
 
 .subject-container h5 {
-    background-color: #0083d4;
+    background-color: 	#0047AB;
     border-radius: 5px;
     padding: 5px 0px 5px 15px;
-    color: white;
+    color: rgb(143, 219, 255);
 }
 
 .subject-container span {
@@ -75,4 +76,18 @@
 .subject-container li {
     margin-top: 5px;
     color: #0083d4;
+}
+
+/* custom scrollbar */
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #00000025;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(150, 150, 150, 0.5);
+    border-radius: 5px;
 }
