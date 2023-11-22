@@ -13,6 +13,7 @@
 .button {
     border: none;
     background: #4285f4;
+    outline: solid 1px #4285f4;
     color: #fff;
     text-transform: uppercase;
     border-radius: 5px;
@@ -23,7 +24,8 @@
 }
 
 .button:hover {
-    color: #7de6f8;
+    color: #4285f4;
+    outline: solid #4285f4;
     box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
     -webkit-transform: translate(0px, -10px) scale(1.2);
     transform: translate(0px, -10px) scale(1.2);
