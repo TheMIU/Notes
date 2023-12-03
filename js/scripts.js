@@ -1,3 +1,15 @@
+// Hide the loading when the document is fully loaded
+document.onreadystatechange = function () {
+    if (document.readyState === "complete") {
+        $('#loading-container').hide();
+    }
+};
+
+// Disable the right-click context menu
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
+
 ////// Enable tooltips
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
@@ -71,7 +83,7 @@ function hideAll() {
     $("#sem-3").hide();
 }
 
-function changeNavLinksWhite(){
+function changeNavLinksWhite() {
     $("#navSEM01").css("color", "white");
     $("#navSEM02").css("color", "white");
     $("#navSEM03").css("color", "white");
@@ -79,8 +91,8 @@ function changeNavLinksWhite(){
 }
 
 ////// Toggle navbar
-function toggleNavbar(){
-   $(".navbar-collapse").collapse('hide');
+function toggleNavbar() {
+    $(".navbar-collapse").collapse('hide');
 }
 
 $(document).on("click", function (event) {

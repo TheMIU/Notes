@@ -93,3 +93,13 @@
     background-color: rgba(150, 150, 150, 0.5);
     border-radius: 5px;
 }
+
+/* loader */
+#loading-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
