@@ -10,3 +10,6 @@ Visit site 🔗 https://themiu.github.io/Notes
 * CSS
 * Networking
 * Spring
+* DSA (Data Structures & Algorithms)
+* TypeScript
+* React
