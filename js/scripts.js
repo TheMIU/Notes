@@ -34,11 +34,11 @@ $(".subject-container ul li").each(function () {
 hideAll();
 changeNavLinksWhite();
 $("#home").css("color", "#45b0ff");
-$("#main3buttons").show();
+$("#mainButtons").show();
 
 $("#navHome").click(function () {
     hideAll();
-    $("#main3buttons").show();
+    $("#mainButtons").show();
     changeNavLinksWhite();
     $("#home").css("color", "#45b0ff");
     toggleNavbar();
@@ -46,7 +46,7 @@ $("#navHome").click(function () {
 
 $("#home").click(function () {
     hideAll();
-    $("#main3buttons").show();
+    $("#mainButtons").show();
     changeNavLinksWhite();
     $("#home").css("color", "#45b0ff");
     toggleNavbar();
@@ -76,17 +76,27 @@ $("#btn-sem-3, #navSEM03").click(function () {
     toggleNavbar();
 });
 
+$("#btn-sem-4, #navSEM04").click(function () {
+    hideAll();
+    $("#sem-4").show();
+    changeNavLinksWhite();
+    $("#navSEM04").css("color", "#45b0ff");
+    toggleNavbar();
+});
+
 function hideAll() {
-    $("#main3buttons").hide();
+    $("#mainButtons").hide();
     $("#sem-1").hide();
     $("#sem-2").hide();
     $("#sem-3").hide();
+    $("#sem-4").hide();
 }
 
 function changeNavLinksWhite() {
     $("#navSEM01").css("color", "white");
     $("#navSEM02").css("color", "white");
     $("#navSEM03").css("color", "white");
+    $("#navSEM04").css("color", "white");
     $("#home").css("color", "white");
 }
 
@@ -101,3 +111,6 @@ $(document).on("click", function (event) {
         $(".navbar-collapse").collapse('hide');
     }
 });
+
+// display currant year
+document.getElementById("yearParagraph").innerHTML += " " + new Date().getFullYear();
