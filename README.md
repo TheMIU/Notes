@@ -17,4 +17,10 @@ Visit site 🔗 https://themiu.github.io/Notes
 ---
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=TheMIU/Notes&type=Date)](https://star-history.com/#TheMIU/Notes&Date)
+<a href="https://star-history.com/#TheMIU/Notes&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=TheMIU/Notes&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=TheMIU/Notes&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=TheMIU/Notes&type=Date" />
+ </picture>
+</a>
