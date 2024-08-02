@@ -13,3 +13,8 @@ Visit site 🔗 https://themiu.github.io/Notes
 * DSA (Data Structures & Algorithms)
 * TypeScript
 * React
+
+---
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=TheMIU/Notes&type=Date)](https://star-history.com/#TheMIU/Notes&Date)
